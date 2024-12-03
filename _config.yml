@@ -24,7 +24,10 @@ author:
   avatar           : "myprofile.jpg"
   name             : "Chenhao Chen"
   pronouns         : # example: "she/her"  
-  bio              : "Natural Language Processing\nComputer Vision\nHuman Computer Interaction"
+  bio              : ｜
+    "Natural Language Inference"
+    "Computer Vision"
+    "Human Computer Interaction"
   location         : "Japan"
   employer         : "Chubu University"
   uri              : # URL
