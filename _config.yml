@@ -80,9 +80,9 @@ publication_category:
     title: 'Books'
   journal:
     title: 'Journal'    
-  inte_conferences:
+  international conference:
     title: ' International Conference'
-  nati_conferences:
+  national conference:
     title: ' National Conference'
   
 
