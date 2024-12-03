@@ -5,8 +5,8 @@
 # prevent it from being included in the site.
 
 main:
-  - title: "CV"
-    url: /cv/
+  - title: "Background"
+    url: /background/
 
   - title: "Publications"
     url: /publications/
