@@ -11,7 +11,7 @@ I am a postdoctoral fellow in the Machine Perception and Robotics Group (MPRG) a
 
 For further information
 ------
-Please contact me via email at [chinshinkou@mprg.cs.chubu.ac.jp](chinshinkou@mprg.cs.chubu.ac.jp)
+Please contact me via email at <u>chinshinkou@mprg.cs.chubu.ac.jp</u>
 
 <!-- A data-driven personal website
 ======
