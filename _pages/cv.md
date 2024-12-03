@@ -11,13 +11,16 @@ redirect_from:
 
 Education
 ======
-* Sep. 2013 ~ Jun. 2017
-  * Ph.D. in Engineering, Kyushu University (Japan)
+* Apr. 2021 ~ Mar. 2024
+  * Ph.D. in Engineering, Kyushu University, Japan
 
-* Sep. 2013 ~ Jun. 2017
-  * Ph.D. in Engineering, Kyushu University (Japan)
+* Apr. 2018 ~ Mar. 2020
+  * M.S. in Engineering, Fukuoka Institute of Technology, Japan
 
-  
+* Sep. 2017 ~ Jun. 2020
+  * M.S. in Engineering, Nanjing University of Science and Technology, China
+  * Dual Master’s Degree Program between Fukuoka Institute of Technology (Japan) and Nanjing University of Science and Technology (China)
+
 Career
 ======
 * Spring 2024: Academic Pages Collaborator
