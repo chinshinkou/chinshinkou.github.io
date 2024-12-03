@@ -24,9 +24,9 @@ author:
   avatar           : "myprofile.jpg"
   name             : "Chenhao Chen"
   pronouns         : # example: "she/her"  
-  bio              : " "
-  location         : "Japan"
-  employer         : "Chubu University"
+  bio              : "Postdoctoral fellow @ Chubu University"
+  location         : # URL
+  employer         : # URL
   uri              : # URL
   email            : "chinshinkou@mprg.cs.chubu.ac.jp" 
 
