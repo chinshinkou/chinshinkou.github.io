@@ -1,7 +1,7 @@
 ---
 title: "マルチモーダルなマイクロ行動分析に基づく複数人会議の定量化"
 collection: publications
-category: national conference
+category: Japanese national conference
 permalink: /publication/nati_1
 excerpt: '本研究では、オンライン会議の定量評価に着目し...'
 date: 2022-06-20

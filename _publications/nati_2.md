@@ -1,7 +1,7 @@
 ---
 title: "A study on estimating the accurate head IMU motion from Video"
 collection: publications
-category: national conference
+category: Japanese national conference
 permalink: /publication/nati_2
 excerpt: 'Inertial measurement unit (IMU) data have been utilized in human activity recognition (HAR)...'
 date: 2022-07-06
