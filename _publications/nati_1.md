@@ -4,7 +4,7 @@ collection: publications
 category: national conference
 permalink: /publication/nati_1
 excerpt: '本研究では、オンライン会議の定量評価に着目し...'
-date: 2023-06-20
+date: 2022-06-20
 venue: '人工知能学会全国大会論文集 第 36 回 (2022)'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_1P1GS1004/_article/-char/ja/'
