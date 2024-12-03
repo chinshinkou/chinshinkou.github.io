@@ -3,7 +3,7 @@ title: "Quantitative Evaluation System for Online Meetings Based on Multimodal M
 collection: publications
 category: journal
 permalink: /publication/journal_1
-# excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'Maintaining a positive interaction is the key to a healthy and efficient meeting...'
 date: 2022-08-01
 venue: 'Sensors & Materials'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
