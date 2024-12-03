@@ -24,7 +24,7 @@ author:
   avatar           : "myprofile.jpg"
   name             : "Chenhao Chen"
   pronouns         : # example: "she/her"  
-  bio              : # "Natural Language Inference<br>Computer Vision"
+  bio              : " "
   location         : "Japan"
   employer         : "Chubu University"
   uri              : # URL
@@ -78,10 +78,13 @@ author:
 publication_category:
   books:
     title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+  journal:
+    title: 'Journal'    
+  inte_conferences:
+    title: ' International Conference'
+  nati_conferences:
+    title: ' National Conference'
+  
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
