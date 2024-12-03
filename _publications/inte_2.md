@@ -5,7 +5,7 @@ category: international conference
 permalink: /publication/inte_2
 excerpt: 'In this paper, we propose ToonMeet...'
 date: 2023-11-06
-venue: '2023 IEEE 35th International Conference on Tools with Artificial Intelligence (ICTAI)'
+venue: '35th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10356588'
 citation: 'C. Chen, S. Fukushima, Y. Nakamura and Y. Arakawa, "ToonMeet: A Real-time Portrait Toonification Framework with Frame Interpolation Fine-tuned for Online Meeting," 2023 IEEE 35th International Conference on Tools with Artificial Intelligence (ICTAI), Atlanta, GA, USA, 2023, pp. 30-37.'

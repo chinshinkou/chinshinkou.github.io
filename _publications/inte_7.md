@@ -5,7 +5,7 @@ category: international conference
 permalink: /publication/inte_7
 excerpt: 'Stereo matching is one of the most important task of stereo binocular vision system...'
 date: 2019-07-02
-venue: '2019 5th International Conference on Engineering, Applied Sciences and Technology (ICEAST)'
+venue: '5th International Conference on Engineering, Applied Sciences and Technology (ICEAST)'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/8802587'
 citation: 'Y. Yang, C. Lu and C. Chen, "Research on stereo matching methods for long distance sea surface image," 2019 5th International Conference on Engineering, Applied Sciences and Technology (ICEAST), Luang Prabang, Laos, 2019, pp. 1-4.'

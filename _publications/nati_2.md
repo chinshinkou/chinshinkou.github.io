@@ -5,7 +5,7 @@ category: national conference
 permalink: /publication/nati_2
 excerpt: 'Inertial measurement unit (IMU) data have been utilized in human activity recognition (HAR)...'
 date: 2022-07-06
-venue: 'マルチメディア, 分散, 協調とモバイルシンポジウム 2022 論文集'
+venue: 'マルチメディア, 分散, 協調とモバイルシンポジウム'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://cir.nii.ac.jp/crid/1050011771467456512'
 citation: 'M. Lu, and C. Chen, "A study on estimating the accurate head IMU motion from Video," マルチメディア, 分散, 協調とモバイルシンポジウム 2022 論文集 2022 (2022): 918-923.'

@@ -5,7 +5,7 @@ category: national conference
 permalink: /publication/nati_1
 excerpt: '本研究では、オンライン会議の定量評価に着目し...'
 date: 2022-06-20
-venue: '人工知能学会全国大会論文集 第 36 回 (2022)'
+venue: ' 第36回人工知能学会全国大会'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_1P1GS1004/_article/-char/ja/'
 citation: ' 陳辰昊, 徳原耕亮, 荒川豊, 渡邉洸、石丸翔也, "マルチモーダルなマイクロ行動分析に基づく複数人会議の定量化," 人工知能学会全国大会論文集 第36回全国大会 (2022), no. 1P1-GS-10-04.'

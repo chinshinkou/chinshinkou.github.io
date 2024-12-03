@@ -5,7 +5,7 @@ category: international conference
 permalink: /publication/inte_4
 excerpt: 'Tsunami is known as one of the most destructive natural disasters...'
 date: 2019-08-31
-venue: 'Proceedings of the Seventh Asia International Symposium on Mechatronics'
+venue: '7th Asia International Symposium on Mechatronics'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-981-32-9441-7_89#citeas'
 citation: 'C. Chen, C. Lu and Y. Yang, "Method of Sea Wave Matching Based on Siamese Network," In: Proceedings of the 7th Asia International Symposium on Mechatronics. Lecture Notes in Electrical Engineering, vol 589. Springer, Singapore.'

@@ -5,7 +5,7 @@ category: international conference
 permalink: /publication/inte_5
 excerpt: 'Correspondence matching is a fundamental task of stereo binocular vision system...'
 date: 2019-08-31
-venue: 'Proceedings of the Seventh Asia International Symposium on Mechatronics'
+venue: '7th Asia International Symposium on Mechatronics'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-981-32-9441-7_86'
 citation: 'Y. Yang, C. Lu and C. Chen, "Long Distance Sea Surface Images Fast Sparse Matching by Integrated Feature Vector," In: Proceedings of the Seventh Asia International Symposium on Mechatronics. Lecture Notes in Electrical Engineering, vol 589. Springer, Singapore.'

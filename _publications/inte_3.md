@@ -5,7 +5,7 @@ category: international conference
 permalink: /publication/inte_3
 excerpt: 'Human activity recognition (HAR) using the deep learning method has caught...'
 date: 2023-11-06
-venue: '2023 International Conference on Consumer Electronics-Taiwan (ICCE-Taiwan)'
+venue: 'International Conference on Consumer Electronics-Taiwan (ICCE-Taiwan)'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10227010'
 citation: 'M. Lu, C. Chen, B. Dawton, Y. Nakamura and Y. Arakawa, "Generating Virtual Head-Mounted Gyroscope Signals From Video Data," 2023 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan), PingTung, Taiwan, 2023, pp. 273-274.'

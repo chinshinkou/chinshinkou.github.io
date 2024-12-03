@@ -5,7 +5,7 @@ category: international conference
 permalink: /publication/inte_1
 excerpt: 'Aiming to evaluate the concentration and engagement level in offline group discussion scenarios...'
 date: 2023-11-29
-venue: '2023 14th International Conference on Mobile Computing and Ubiquitous Network (ICMU)'
+venue: '14th International Conference on Mobile Computing and Ubiquitous Network (ICMU)'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10412258'
 citation: 'C. Chen, Y. Nakamura and Y. Arakawa, "An End-To-End Hybrid Overhead Facial Orientation Estimation System for Offline Group Discussions," 2023 Fourteenth International Conference on Mobile Computing and Ubiquitous Network (ICMU), Kyoto, Japan, 2023, pp. 1-6.'
