@@ -1,17 +1,17 @@
 ---
 permalink: /
-title: "Welcome to my homepage. "
+title: "Welcome to my homepage"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a postdoctoral fellow in the Machine Perception and Robotics Group (MPRG) at Chubu University, Japan. I obtained my Ph.D in Engineering from Kyushu University, Japan. Prior to that, I joined a dual Master’s degree program between Nanjing University of Science and Technology (China) and Fukuoka University of Technology (Japan), and obtained two Master’s degrees in June 2020. My research interests include natural language inference, computer vision, and image processing.
+I am a postdoctoral fellow in the Machine Perception and Robotics Group (MPRG) at Chubu University, Japan. I obtained my Ph.D in Engineering from Kyushu University, Japan. Prior to that, I joined a dual Master’s degree program between Nanjing University of Science and Technology (China) and Fukuoka Institute of Technology (Japan), and obtained two Master’s degrees in June 2020. My research interests include natural language inference, computer vision, and image processing.
 
 For further information
 ------
-Please contact me via email at chinshinkou@mprg.cs.chubu.ac.jp
+Please contact me via email at [chinshinkou@mprg.cs.chubu.ac.jp](chinshinkou@mprg.cs.chubu.ac.jp)
 
 <!-- A data-driven personal website
 ======
