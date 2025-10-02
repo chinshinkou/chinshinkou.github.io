@@ -2,7 +2,7 @@
 title: "CRNLI: A Textual Entailment Dataset in the Chemistry Domain"
 collection: publications
 category: international conference
-permalink: /publication/inte_1
+permalink: /publication/inte_8
 excerpt: 'Natural language inference (NLI) involves determining the entailment relation between pairs of textual statements...'
 date: 2025-08-25
 venue: '28th International Conference on Text, Speech, and Dialogue (TSD2025)'
