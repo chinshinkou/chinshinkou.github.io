@@ -2,7 +2,7 @@
 title: "Generating Virtual Head-Mounted Gyroscope Signals From Video Data"
 collection: publications
 category: international conference
-permalink: /publication/inte_3
+permalink: /publication/inte_6
 excerpt: 'Human activity recognition (HAR) using the deep learning method has caught...'
 date: 2023-11-06
 venue: 'International Conference on Consumer Electronics-Taiwan (ICCE-Taiwan)'
