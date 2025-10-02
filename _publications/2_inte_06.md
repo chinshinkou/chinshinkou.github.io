@@ -1,14 +1,15 @@
 ---
-title: "Research on stereo matching methods for long distance sea surface image"
+title: "Generating Virtual Head-Mounted Gyroscope Signals From Video Data"
 collection: publications
 category: international conference
-permalink: /publication/inte_7
-excerpt: 'Stereo matching is one of the most important task of stereo binocular vision system...'
-date: 2019-07-02
-venue: '5th International Conference on Engineering, Applied Sciences and Technology (ICEAST)'
+permalink: /publication/inte_3
+excerpt: 'Human activity recognition (HAR) using the deep learning method has caught...'
+date: 2023-11-06
+venue: 'International Conference on Consumer Electronics-Taiwan (ICCE-Taiwan)'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://ieeexplore.ieee.org/abstract/document/8802587'
-citation: 'Y. Yang, C. Lu and C. Chen, "Research on stereo matching methods for long distance sea surface image," 2019 5th International Conference on Engineering, Applied Sciences and Technology (ICEAST), Luang Prabang, Laos, 2019, pp. 1-4.'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/10227010'
+citation: 'M. Lu, C. Chen, B. Dawton, Y. Nakamura and Y. Arakawa, "Generating Virtual Head-Mounted Gyroscope Signals From Video Data," 2023 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan), PingTung, Taiwan, 2023, pp. 273-274.'
 ---
 
-Stereo matching is one of the most important task of stereo binocular vision system. This paper will discuss stereo matching method used in tsunami warning system which measures tsunami based on stereo binocular vision system. To solve the problem of lacking obvious feature points in sea surface image, the paper extracts sea waves out from sea surface image to form feature points and integrates sea waves' size, shape, brightness, location and lengths in four orientations to distinguish each point and finishes stereo matching of tsunami warning system by the feature points and their features.
+Human activity recognition (HAR) using the deep learning method has caught the attention of researchers thanks to its automatic feature extraction and accurate prediction capabilities. However, for applications based on a wearable sensor, such as an inertial measurement unit (IMU), the process of collecting and hand-labeling large amounts of data is complicated and labor-intensive, meaning that there is a limited amount of data available for model training. Therefore, there is a need to propose and develop data augmentation approaches to generate high quality data for the growth of HAR research. We propose a head-mounted virtual gyroscope signal generator to alleviate the problems caused by the lack of data in head movement-related applications. Unlike previous work, our system only generates head-motion related gyroscope data, minimizing system complexity. We trained a deep-learning model in a head motion-based application with different generated sensor data ratios, and show the viability of our proposed data generation method.
+

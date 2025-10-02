@@ -1,14 +1,14 @@
 ---
-title: "An End-To-End Hybrid Overhead Facial Orientation Estimation System for Offline Group Discussions"
+title: "Method of Sea Wave Extraction and Matching from Images Based on Convolutional Neural Network"
 collection: publications
 category: international conference
-permalink: /publication/inte_1
-excerpt: 'Aiming to evaluate the concentration and engagement level in offline group discussion scenarios...'
-date: 2023-11-29
-venue: '14th International Conference on Mobile Computing and Ubiquitous Network (ICMU)'
+permalink: /publication/inte_8
+excerpt: 'Tsunami is known as one of the most destructive natural disasters...'
+date: 2019-07-02
+venue: '5th International Conference on Engineering, Applied Sciences and Technology (ICEAST)'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://ieeexplore.ieee.org/abstract/document/10412258'
-citation: 'C. Chen, Y. Nakamura and Y. Arakawa, "An End-To-End Hybrid Overhead Facial Orientation Estimation System for Offline Group Discussions," 2023 Fourteenth International Conference on Mobile Computing and Ubiquitous Network (ICMU), Kyoto, Japan, 2023, pp. 1-6.'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/8802545'
+citation: 'C. Chen, C. Lu and Y. Yang, "Method of Sea Wave Extraction and Matching from Images Based on Convolutional Neural Network," 2019 5th International Conference on Engineering, Applied Sciences and Technology (ICEAST), Luang Prabang, Laos, 2019, pp. 1-4.'
 ---
 
-Aiming to evaluate the concentration and engagement level in offline group discussion scenarios, we seek to capture the interaction information among meeting participants. In this paper, we focus on the facial orientation and present an end-to-end hybrid system capable of 2D overhead facial orientation estimation. Compared to common perspectives from which personal identity information is exposed, we explore approaches to perform overhead facial orientation estimation due to the privacy problem. The proposed system is a neural network-based architecture and composed of three modules. First we leverage and train from scratch the YOLOv8 model on the HollywoodHeads dataset, which allows full-perspective head detection in visual scenes. With the obtained head location, we then generate the corresponding head masks from the visual information within the bounding box. Finally, we fit them to ellipse so that 2D overhead facial orientation of all the meeting participants in the visual scenes can be estimated with the ellipse properties. Experiments demonstrate that our system achieves an MAE of 12.47 on the test dataset.
+Tsunami is known as one of the most destructive natural disasters. Aiming to measure Tsunami, our laboratory proposed a method based on binocular stereo vision. As we calculate the 3D coordinates of sea waves, the sea surface height in surveillance area can be measured in real time. Sea wave extraction and sea wave matching are two key steps in the above method. By conventional image processing methods, the effects of sea wave extraction and sea wave matching are not satisfactory because of uneven illuminance and different filming angles. In this paper, we propose a method of sea wave extraction and sea wave matching based on Convolutional Neural Network (CNN). Firstly, we take photos of the sea surface with two cameras. Given the raw photos, we divide them into small blocks of waves. According to the wave quantity in each block, we can build databases for sea wave extraction. And databases for sea wave matching can be built according to the matching situation of two blocks from left and right photos. Then we make use of the open-source software library Tensorflow to establish two CNN frameworks. After being trained by training databases, experiments on the test database show that the two CNN systems can separately extract and match sea waves from photos with considerable accuracy within several seconds. Besides, our network is self-adaptive to different sea wave images as well as to different camera settings.
