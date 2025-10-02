@@ -2,7 +2,7 @@
 title: "Method of Sea Wave Matching Based on Siamese Network"
 collection: publications
 category: international conference
-permalink: /publication/inte_6
+permalink: /publication/inte_3
 excerpt: 'Tsunami is known as one of the most destructive natural disasters...'
 date: 2019-08-31
 venue: '7th Asia International Symposium on Mechatronics'
