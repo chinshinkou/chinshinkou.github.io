@@ -2,7 +2,7 @@
 title: "Long Distance Sea Surface Images Fast Sparse Matching by Integrated Feature Vector"
 collection: publications
 category: international conference
-permalink: /publication/inte_5
+permalink: /publication/inte_4
 excerpt: 'Correspondence matching is a fundamental task of stereo binocular vision system...'
 date: 2019-08-31
 venue: '7th Asia International Symposium on Mechatronics'
