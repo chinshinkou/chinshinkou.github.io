@@ -2,7 +2,7 @@
 title: "ToonMeet: A Real-time Portrait Toonification Framework with Frame Interpolation Fine-tuned for Online Meeting"
 collection: publications
 category: international conference
-permalink: /publication/inte_4
+permalink: /publication/inte_5
 excerpt: 'In this paper, we propose ToonMeet...'
 date: 2023-11-06
 venue: '35th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)'
