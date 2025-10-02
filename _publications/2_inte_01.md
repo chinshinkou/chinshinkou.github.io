@@ -2,7 +2,7 @@
 title: "Method of Sea Wave Extraction and Matching from Images Based on Convolutional Neural Network"
 collection: publications
 category: international conference
-permalink: /publication/inte_8
+permalink: /publication/inte_1
 excerpt: 'Tsunami is known as one of the most destructive natural disasters...'
 date: 2019-07-02
 venue: '5th International Conference on Engineering, Applied Sciences and Technology (ICEAST)'
