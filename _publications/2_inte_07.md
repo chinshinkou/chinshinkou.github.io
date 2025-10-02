@@ -2,7 +2,7 @@
 title: "An End-To-End Hybrid Overhead Facial Orientation Estimation System for Offline Group Discussions"
 collection: publications
 category: international conference
-permalink: /publication/inte_2
+permalink: /publication/inte_7
 excerpt: 'Aiming to evaluate the concentration and engagement level in offline group discussion scenarios...'
 date: 2023-11-29
 venue: '14th International Conference on Mobile Computing and Ubiquitous Network (ICMU)'
