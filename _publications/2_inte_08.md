@@ -6,7 +6,7 @@ permalink: /publication/inte_1
 excerpt: 'Natural language inference (NLI) involves determining the entailment relation between pairs of textual statements...'
 date: 2025-08-25
 venue: '28th International Conference on Text, Speech, and Dialogue (TSD2025)'
-# slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
+# slidesurl: 'http://academicpages.github.io/files/slides1.pdf '
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-032-02551-7_9'
 citation: 'Chen, C., Masuda, T., Ushiku, Y., Tanaka, S., Saito, K., Hirakawa, T., Yamashita, T., & Fujiyoshi, H. (2025). CRNLI: A Textual Entailment Dataset in the Chemistry Domain. International Conference on Text, Speech and Dialogue.'
 ---
