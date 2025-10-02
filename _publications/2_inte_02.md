@@ -2,7 +2,7 @@
 title: "Research on stereo matching methods for long distance sea surface image"
 collection: publications
 category: international conference
-permalink: /publication/inte_7
+permalink: /publication/inte_2
 excerpt: 'Stereo matching is one of the most important task of stereo binocular vision system...'
 date: 2019-07-02
 venue: '5th International Conference on Engineering, Applied Sciences and Technology (ICEAST)'
