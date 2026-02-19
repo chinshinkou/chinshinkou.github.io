@@ -17,30 +17,52 @@ $(document).ready(function () {
   });
   $("a").removeClass("waves-effect waves-light");
 
+  // social icon hover labels
+  const $socialIconLinks = $(".social .contact-icons a, .navbar-brand.social a");
+  $socialIconLinks.filter("[href^='mailto:']").attr({
+    title: "E-mail",
+    "aria-label": "E-mail",
+  });
+  $socialIconLinks.filter("[href*='orcid.org']").attr({
+    title: "Orcid ID",
+    "aria-label": "Orcid ID",
+  });
+  $socialIconLinks.filter("[href*='scholar.google']").attr({
+    title: "Google Scholar",
+    "aria-label": "Google Scholar",
+  });
+
+  let emailCopiedToastTimer = null;
+  const ensureEmailCopiedToast = function () {
+    let $toast = $("#email-copied-toast");
+    if (!$toast.length) {
+      $("body").append('<div id="email-copied-toast" role="status" aria-live="polite">E-mail Copied</div>');
+      $toast = $("#email-copied-toast");
+    }
+    return $toast;
+  };
+
+  const showEmailCopiedToast = function () {
+    const $toast = ensureEmailCopiedToast();
+    $toast.addClass("show");
+    if (emailCopiedToastTimer) {
+      clearTimeout(emailCopiedToastTimer);
+    }
+    emailCopiedToastTimer = setTimeout(function () {
+      $toast.removeClass("show");
+    }, 1200);
+  };
+
   // copy email address from the social icon instead of opening the mail client
   $(".social .contact-icons a[href^='mailto:']").on("click", function (event) {
     event.preventDefault();
 
-    const linkEl = this;
-    const href = $(linkEl).attr("href") || "";
+    const href = $(this).attr("href") || "";
     const email = decodeURIComponent(href.replace(/^mailto:/i, "").split("?")[0]).trim();
 
     if (!email) {
       return;
     }
-
-    const showCopiedState = function () {
-      const $link = $(linkEl);
-      const originalTitle = $link.attr("title");
-      $link.attr("title", "Copied");
-      setTimeout(function () {
-        if (originalTitle) {
-          $link.attr("title", originalTitle);
-        } else {
-          $link.removeAttr("title");
-        }
-      }, 1200);
-    };
 
     const fallbackCopy = function () {
       const textArea = document.createElement("textarea");
@@ -58,14 +80,14 @@ $(document).ready(function () {
     if (navigator.clipboard && window.isSecureContext) {
       navigator.clipboard
         .writeText(email)
-        .then(showCopiedState)
+        .then(showEmailCopiedToast)
         .catch(function () {
           if (fallbackCopy()) {
-            showCopiedState();
+            showEmailCopiedToast();
           }
         });
     } else if (fallbackCopy()) {
-      showCopiedState();
+      showEmailCopiedToast();
     }
   });
 
