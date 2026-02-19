@@ -5,15 +5,17 @@ permalink: /
 nav: true
 nav_order: 1
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-subtitle: Assistant Professor at <a href="https://www.fit.ac.jp/" target="_blank" rel="noopener noreferrer">Fukuoka Institute of Technology</a>
+subtitle: Assistant Professor @ <a href="https://www.fit.ac.jp/" target="_blank" rel="noopener noreferrer">Fukuoka Institute of Technology</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>3-30-1, Washirohigashi, Higashi-ku, Fukuoka City</p>
-    <p>Fukuoka Prefecture, 811-0295, Japan</p>
+    <p>c-chenhao@fit.ac.jp</p>
+    <p>3-30-1, Washirohigashi</p>
+    <p>Higashi-ku, Fukuoka City</p>
+    <p>Fukuoka Prefecture, 811-0295</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
