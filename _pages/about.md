@@ -12,7 +12,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>c-chenhao@fit.ac.jp</p>
     <p>3-30-1, Washirohigashi</p>
     <p>Higashi-ku, Fukuoka City</p>
     <p>Fukuoka Prefecture, 811-0295</p>
@@ -37,4 +36,6 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-I received my Ph.D. degree of Engineering from [Kyushu University](https://www.kyushu-u.ac.jp/ja/), Japan, in 2024. From 2024 to 2026, I was a Postdoctoral Researcher at [Chubu University](https://www.chubu.ac.jp/), working with Prof. Fujiyoshi (Chubu University) and Dr. Ushiku (OMRON SINIC X) on a [JST Moonshot R&D project](https://www.jst.go.jp/moonshot/program/goal3/36_ushiku.html). My research interests lie in deep learning, natural language processing, and behavior change support systems.
+I received my Ph.D. degree of Engineering from [Kyushu University](https://www.kyushu-u.ac.jp/ja/), Japan, in 2024. From 2024 to 2026, I was a Postdoctoral Researcher at [Chubu University](https://www.chubu.ac.jp/), working with Prof. Fujiyoshi (Chubu University) and Dr. Ushiku (OMRON SINIC X) on a [JST Moonshot R&D project](https://www.jst.go.jp/moonshot/program/goal3/36_ushiku.html).
+
+My research interests lie in deep learning, natural language processing, and behavior change support systems.
