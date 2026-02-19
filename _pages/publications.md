@@ -17,17 +17,17 @@ toc:
 
 <div class="publications">
   <h2>Journals (English)</h2>
-  {% bibliography --query @*[category=Journals - English]* %}
+  {% bibliography --query @*[category=journals-english]* %}
 
   <h2>Journals (Japanese)</h2>
-  {% bibliography --query @*[category=Journals - Japanese]* %}
+  {% bibliography --query @*[category=journals-japanese]* %}
 
   <h2>Conferences (English)</h2>
-  {% bibliography --query @*[category=Conferences - English]* %}
+  {% bibliography --query @*[category=conferences-english]* %}
 
   <h2>Conferences (Japanese)</h2>
-  {% bibliography --query @*[category=Conferences - Japanese]* %}
+  {% bibliography --query @*[category=conferences-japanese]* %}
 
   <h2>Others</h2>
-  {% bibliography --query @*[category=Others]* %}
+  {% bibliography --query @*[category=others]* %}
 </div>
