@@ -23,14 +23,42 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-publications",
-          title: "publications",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "dropdown-journals-international",
+              title: "Journals (International)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/publications/journals-international/";
+              },
+            },{id: "dropdown-journals-japanese",
+              title: "Journals (Japanese)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/publications/journals-japanese/";
+              },
+            },{id: "dropdown-conferences-international",
+              title: "Conferences (International)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/publications/conferences-international/";
+              },
+            },{id: "dropdown-conferences-japanese",
+              title: "Conferences (Japanese)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/publications/conferences-japanese/";
+              },
+            },{id: "dropdown-others",
+              title: "Others",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/publications/others/";
+              },
+            },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
