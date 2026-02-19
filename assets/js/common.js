@@ -33,24 +33,50 @@ $(document).ready(function () {
   });
 
   let emailCopiedToastTimer = null;
-  const ensureEmailCopiedToast = function () {
-    let $toast = $("#email-copied-toast");
-    if (!$toast.length) {
-      $("body").append('<div id="email-copied-toast" role="status" aria-live="polite">E-mail Copied</div>');
-      $toast = $("#email-copied-toast");
-    }
-    return $toast;
-  };
-
   const showEmailCopiedToast = function () {
-    const $toast = ensureEmailCopiedToast();
-    $toast.addClass("show");
+    const oldToast = document.getElementById("email-copied-toast");
+    if (oldToast) {
+      oldToast.remove();
+    }
+
+    const toast = document.createElement("div");
+    toast.id = "email-copied-toast";
+    toast.textContent = "E-mail Copied";
+    toast.setAttribute("role", "status");
+    toast.setAttribute("aria-live", "polite");
+    toast.style.position = "fixed";
+    toast.style.left = "50%";
+    toast.style.top = "50%";
+    toast.style.transform = "translate(-50%, -50%)";
+    toast.style.background = "rgba(33, 37, 41, 0.95)";
+    toast.style.color = "#fff";
+    toast.style.borderRadius = "0.35rem";
+    toast.style.padding = "0.35rem 0.6rem";
+    toast.style.fontSize = "0.85rem";
+    toast.style.fontWeight = "500";
+    toast.style.lineHeight = "1.2";
+    toast.style.boxShadow = "0 6px 18px rgba(0, 0, 0, 0.25)";
+    toast.style.zIndex = "3000";
+    toast.style.opacity = "0";
+    toast.style.transition = "opacity 0.12s ease";
+    toast.style.pointerEvents = "none";
+    document.body.appendChild(toast);
+
+    requestAnimationFrame(function () {
+      toast.style.opacity = "1";
+    });
+
     if (emailCopiedToastTimer) {
       clearTimeout(emailCopiedToastTimer);
     }
     emailCopiedToastTimer = setTimeout(function () {
-      $toast.removeClass("show");
-    }, 1200);
+      toast.style.opacity = "0";
+      setTimeout(function () {
+        if (toast.parentNode) {
+          toast.parentNode.removeChild(toast);
+        }
+      }, 140);
+    }, 1000);
   };
 
   // copy email address from the social icon instead of opening the mail client
