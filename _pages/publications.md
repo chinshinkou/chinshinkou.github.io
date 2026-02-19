@@ -4,25 +4,18 @@ permalink: /publications/
 title: publications
 nav: true
 nav_order: 3
-toc:
-  sidebar: left
+dropdown: true
+children:
+  - title: Journals (International)
+    permalink: /publications/journals-international/
+  - title: Journals (Japanese)
+    permalink: /publications/journals-japanese/
+  - title: Conferences (International)
+    permalink: /publications/conferences-international/
+  - title: Conferences (Japanese)
+    permalink: /publications/conferences-japanese/
+  - title: Others
+    permalink: /publications/others/
 ---
 
-<!-- _pages/publications.md -->
-
-<div class="publications">
-  <h2>Journals (International)</h2>
-  {% bibliography --query @*[category=journals_international]* %}
-
-  <h2>Journals (Japanese)</h2>
-  {% bibliography --query @*[category=journals_japanese]* %}
-
-  <h2>Conferences (International)</h2>
-  {% bibliography --query @*[category=conferences_international]* %}
-
-  <h2>Conferences (Japanese)</h2>
-  {% bibliography --query @*[category=conferences_japanese]* %}
-
-  <h2>Others</h2>
-  {% bibliography --query @*[category=others]* %}
-</div>
+<!-- Publications is a dropdown parent in the navbar. -->
