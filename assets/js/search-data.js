@@ -4,13 +4,13 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-about",
-          title: "about",
+          title: "About",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -23,21 +23,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "dropdown-journals-international",
-              title: "Journals (International)",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/publications/journals-international/";
-              },
-            },{id: "dropdown-journals-japanese",
-              title: "Journals (Japanese)",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/publications/journals-japanese/";
-              },
-            },{id: "dropdown-conferences-international",
+        },{id: "dropdown-conferences-international",
               title: "Conferences (International)",
               description: "",
               section: "Dropdown",
@@ -50,6 +36,20 @@ ninja.data = [{
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/publications/conferences-japanese/";
+              },
+            },{id: "dropdown-journals-international",
+              title: "Journals (International)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/publications/journals-international/";
+              },
+            },{id: "dropdown-journals-japanese",
+              title: "Journals (Japanese)",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/publications/journals-japanese/";
               },
             },{id: "dropdown-others",
               title: "Others",
