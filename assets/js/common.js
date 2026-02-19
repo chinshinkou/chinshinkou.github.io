@@ -17,6 +17,58 @@ $(document).ready(function () {
   });
   $("a").removeClass("waves-effect waves-light");
 
+  // copy email address from the social icon instead of opening the mail client
+  $(".social .contact-icons a[href^='mailto:']").on("click", function (event) {
+    event.preventDefault();
+
+    const linkEl = this;
+    const href = $(linkEl).attr("href") || "";
+    const email = decodeURIComponent(href.replace(/^mailto:/i, "").split("?")[0]).trim();
+
+    if (!email) {
+      return;
+    }
+
+    const showCopiedState = function () {
+      const $link = $(linkEl);
+      const originalTitle = $link.attr("title");
+      $link.attr("title", "Copied");
+      setTimeout(function () {
+        if (originalTitle) {
+          $link.attr("title", originalTitle);
+        } else {
+          $link.removeAttr("title");
+        }
+      }, 1200);
+    };
+
+    const fallbackCopy = function () {
+      const textArea = document.createElement("textarea");
+      textArea.value = email;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "absolute";
+      textArea.style.left = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textArea);
+      return copied;
+    };
+
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard
+        .writeText(email)
+        .then(showCopiedState)
+        .catch(function () {
+          if (fallbackCopy()) {
+            showCopiedState();
+          }
+        });
+    } else if (fallbackCopy()) {
+      showCopiedState();
+    }
+  });
+
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
     // remove publication year headings from the TOC, keep custom section headings

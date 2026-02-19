@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-01-16
+date: 2025-08-22
 inline: true
 related_posts: false
 ---
 
-Paper accepted by AI2A2025.
+Paper accepted by TSD2025.
