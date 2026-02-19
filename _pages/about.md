@@ -28,6 +28,12 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+_styles: |
+  .about-intro p {
+    font-size: 1.08rem;
+    line-height: 1.8;
+  }
 ---
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
@@ -36,6 +42,10 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
+<div class="about-intro" markdown="1">
+
 I received my Ph.D. degree of Engineering from [Kyushu University](https://www.kyushu-u.ac.jp/ja/), Japan, in 2024. From 2024 to 2026, I was a Postdoctoral Researcher at [Chubu University](https://www.chubu.ac.jp/), working with Prof. Fujiyoshi (Chubu University) and Dr. Ushiku (OMRON SINIC X) on a [JST Moonshot R&D project](https://www.jst.go.jp/moonshot/program/goal3/36_ushiku.html).
 
 My research interests lie in deep learning, natural language processing, and behavior change support systems.
+
+</div>
