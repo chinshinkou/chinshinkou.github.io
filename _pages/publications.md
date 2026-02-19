@@ -16,17 +16,17 @@ toc:
 {% include bib_search.liquid %}
 
 <div class="publications">
-  <h2>Journals (English)</h2>
-  {% bibliography --query @*[category=journals-english]* %}
+  <h2>Journal (English)</h2>
+  {% bibliography --query @*[category=journals_english]* %}
 
-  <h2>Journals (Japanese)</h2>
-  {% bibliography --query @*[category=journals-japanese]* %}
+  <h2>Journal (Japanese)</h2>
+  {% bibliography --query @*[category=journals_japanese]* %}
 
-  <h2>Conferences (English)</h2>
-  {% bibliography --query @*[category=conferences-english]* %}
+  <h2>Conference (English)</h2>
+  {% bibliography --query @*[category=conferences_english]* %}
 
-  <h2>Conferences (Japanese)</h2>
-  {% bibliography --query @*[category=conferences-japanese]* %}
+  <h2>Conference (Japanese)</h2>
+  {% bibliography --query @*[category=conferences_japanese]* %}
 
   <h2>Others</h2>
   {% bibliography --query @*[category=others]* %}

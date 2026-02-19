@@ -19,9 +19,12 @@ $(document).ready(function () {
 
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
-    // remove related publications years from the TOC
+    // remove publication year headings from the TOC, keep custom section headings
     $(".publications h2").each(function () {
-      $(this).attr("data-toc-skip", "");
+      const headingText = $(this).text().trim();
+      if (/^\d{4}$/.test(headingText)) {
+        $(this).attr("data-toc-skip", "");
+      }
     });
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
