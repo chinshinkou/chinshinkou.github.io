@@ -323,6 +323,7 @@ filtered_bibtex_keywords:
     award_name,
     bibtex_show,
     blog,
+    category,
     code,
     dimensions,
     eprint,
