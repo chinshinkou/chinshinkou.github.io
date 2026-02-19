@@ -3,7 +3,6 @@
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 # cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
 email: c-chenhao@fit.ac.jp # your email address
-orcid_id: 0009-0004-0811-4667
 scholar_userid: Cso3XCQAAAAJ # your Google Scholar ID
 custom_social:
   logo: /assets/img/link_icons/orcid_logo_icon_145004.png
