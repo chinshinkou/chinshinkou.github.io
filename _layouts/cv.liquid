@@ -89,14 +89,19 @@ layout: default
                   <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
                 </tr>
               {% endif %}
-              {% if cv.address %}
+              {% if cv.location or cv.address %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
                   <td class="p-1 pl-2 font-weight-light">
-                    {% if cv.address.street %}{{ cv.address.street }}, {% endif %}
-                    {% if cv.address.city %}{{ cv.address.city }}, {% endif %}
-                    {% if cv.address.region %}{{ cv.address.region }} {% endif %}
-                    {% if cv.address.postalCode %}{{ cv.address.postalCode }}{% endif %}
+                    {% if cv.location %}
+                      {{ cv.location }}
+                    {% else %}
+                      {% if cv.address.street %}{{ cv.address.street }}, {% endif %}
+                      {% if cv.address.city %}{{ cv.address.city }}, {% endif %}
+                      {% if cv.address.region %}{{ cv.address.region }} {% endif %}
+                      {% if cv.address.postalCode %}{{ cv.address.postalCode }}{% endif %}
+                      {% if cv.address.country %}, {{ cv.address.country }}{% elsif cv.address.countryCode %}, {{ cv.address.countryCode }}{% endif %}
+                    {% endif %}
                   </td>
                 </tr>
               {% endif %}
@@ -237,6 +242,7 @@ layout: default
                     {% if basics.location.city %}{{ basics.location.city }}, {% endif %}
                     {% if basics.location.region %}{{ basics.location.region }} {% endif %}
                     {% if basics.location.postalCode %}{{ basics.location.postalCode }}{% endif %}
+                    {% if basics.location.country %}, {{ basics.location.country }}{% elsif basics.location.countryCode %}, {{ basics.location.countryCode }}{% endif %}
                   </td>
                 </tr>
               {% endif %}

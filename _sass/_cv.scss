@@ -15,6 +15,17 @@ table.table-cv {
   }
 }
 
+// Keep label text on one line and shift card contents slightly to the right.
+.cv .table-cv td:first-child {
+  white-space: nowrap;
+}
+
+.cv .card > .table-cv,
+.cv .card > p,
+.cv .card > div {
+  margin-left: 0.75rem;
+}
+
 a.btncv {
   color: var(--global-text-color) !important;
   border: 1px solid var(--global-text-color) !important;

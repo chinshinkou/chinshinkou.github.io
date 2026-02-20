@@ -25,7 +25,7 @@ cv:
     Education:
       - institution: Kyushu University
         location: Japan
-        studyType: Ph.D. in Engineering (Japan)
+        studyType: Ph.D. in Engineering
         start_date: 2021
         end_date: 2024
 
@@ -61,7 +61,7 @@ cv:
         start_date: 2024
         end_date: Present
 
-      - company: Chubu University
+      - company: Machine Perception and Robotics Group (MPRG), Chubu University
         position: Postdoctoral Researcher
         location: Japan
         start_date: 2024
@@ -86,8 +86,6 @@ cv:
 
     Awards:
       - title: Best Presenter Award
-        authors:
-          - "Hypothesis Alignment via Clause-level Attribution-guided Span Masking and Infilling"
         date: 2025-10-24
         awarder: 2025 5th International Conference on Communications, Networking and Machine Learning (CCNML2025)
 
