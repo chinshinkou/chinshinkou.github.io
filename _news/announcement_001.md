@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Renew my homepage。
+Renew my homepage.

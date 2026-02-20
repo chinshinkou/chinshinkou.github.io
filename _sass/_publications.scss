@@ -7,6 +7,11 @@
 .publications {
   margin-top: 2rem;
 
+  // Keep hash-jump targets visible below the fixed top navigation area.
+  ol.bibliography li .row > div[id] {
+    scroll-margin-top: 66px;
+  }
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
