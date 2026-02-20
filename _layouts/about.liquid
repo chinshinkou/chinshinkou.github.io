@@ -74,7 +74,20 @@ layout: default
     <!-- Social -->
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+        <div class="contact-icons">
+          {% social_links %}
+          {% if site.data.socials.researchmap_url and site.data.socials.researchmap_url != blank %}
+            <a
+              href="{{ site.data.socials.researchmap_url }}"
+              title="Researchmap"
+              aria-label="Researchmap"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-map"></i>
+            </a>
+          {% endif %}
+        </div>
         {% if site.contact_note and site.contact_note != blank %}
           <div class="contact-note">{{ site.contact_note }}</div>
         {% endif %}
