@@ -206,6 +206,17 @@ ul.timeline li::before {
   top: -0.5rem;
 }
 
+/* CV page sidebar TOC font size override */
+body.page-layout-cv {
+  nav[data-toggle="toc"] {
+    .nav > li > a,
+    .nav .nav > li > a,
+    .nav-link.active {
+      font-size: 0.9rem;
+    }
+  }
+}
+
 /*ul.timeline::before {
      content: "●";
      font-size: 1em;
