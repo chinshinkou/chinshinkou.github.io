@@ -427,7 +427,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-renew-my-homepage",
-          title: 'Renew my homepage。',
+          title: 'Renew my homepage.',
           description: "",
           section: "News",},{id: "news-paper-accepted-by-tsd2025",
           title: 'Paper accepted by TSD2025.',
