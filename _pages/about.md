@@ -9,7 +9,7 @@ subtitle: Assistant Professor @ <a href="https://www.fit.ac.jp/" target="_blank"
 
 profile:
   align: right
-  image: /assets/img/myphoto.png
+  image: myphoto.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>3-30-1, Washirohigashi</p>
