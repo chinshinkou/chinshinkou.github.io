@@ -30,6 +30,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 
 _styles: |
+  .profile .more-info p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0.2rem;
+  }
+
   .post-header .desc {
     font-size: 1.05rem;
   }
@@ -39,6 +45,7 @@ _styles: |
     line-height: 1.65;
     text-align: justify;
   }
+
 ---
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
