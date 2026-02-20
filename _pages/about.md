@@ -9,7 +9,7 @@ subtitle: Assistant Professor @ Fukuoka Institute of Technology
 
 profile:
   align: right
-  image: myphoto.png
+  image: myphoto.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>3-30-1, Washirohigashi</p>
