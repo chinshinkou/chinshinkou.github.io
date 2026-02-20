@@ -23,6 +23,24 @@ cv:
 
   sections:
     Education:
+      - institution: Kyushu University
+        location: Japan
+        studyType: Ph.D. in Engineering (Japan)
+        start_date: 2021
+        end_date: 2024
+
+      - institution: Fukuoka Institute of Technology
+        location: Japan
+        studyType: M.E. in Engineering (Japan)
+        start_date: 2018
+        end_date: 2020
+
+      - institution: Nanjing University of Science and Technology
+        location: China
+        studyType: M.E. in Engineering (China)
+        start_date: 2017
+        end_date: 2020
+
       - institution: Nanjing University of Science and Technology
         location: China
         # url: https://www.uzh.ch/
@@ -36,36 +54,24 @@ cv:
         #   - Description 1.
         #   - Description 2.
 
-      - institution: Nanjing University of Science and Technology
-        location: China
-        studyType: M.E. in Engineering (China)
-        start_date: 2017
-        end_date: 2020
-
-      - institution: Fukuoka Institute of Technology
-        location: Japan
-        studyType: M.E. in Engineering (Japan)
-        start_date: 2018
-        end_date: 2020
-
-      - institution: Kyushu University
-        location: Japan
-        studyType: Ph.D. in Engineering (Japan)
-        start_date: 2021
-        end_date: 2024
-
     Experience:
-      - company: German Research Center for Artificial Intelligence (DFKI)
-        position: Intern Researcher
-        location: Germany
-        start_date: 2022
-        end_date: 2023
+      - company: Fukuoka Institute of Technology
+        position: Assistant Professor
+        location: Japan
+        start_date: 2024
+        end_date: Present
 
       - company: Chubu University
         position: Postdoctoral Researcher
         location: Japan
         start_date: 2024
         end_date: 2026
+
+      - company: German Research Center for Artificial Intelligence (DFKI)
+        position: Intern Researcher
+        location: Germany
+        start_date: 2022
+        end_date: 2023
 
     # Volunteer:
     #   - company: People's Climate March
@@ -79,20 +85,23 @@ cv:
     #       - "Men of the year 2014 by Time magazine"
 
     Awards:
-      - title: Nobel Prize in Physics
+      - title: Best Presenter Award
         authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+          - "Hypothesis Alignment via Clause-level Attribution-guided Span Masking and Infilling"
+        date: 2025-10-24
+        awarder: 2025 5th International Conference on Communications, Networking and Machine Learning (CCNML2025)
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - title: 電気通信普及財団海外渡航旅費援助
+        date: 2023-11-6
+        awarder: 電気通信普及財団
+      
+      - title: 九州大学先導的人材育成フェローシップ事業（情報・AI分野）
+        # authors:
+        #   - "九州大学"
+        date: 2021-04-19
+        awarder: 九州大学
+        # url: https://www.fukoku.ac.jp/
+        # summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
 
     # Publications:
     #   - title: Zur Elektrodynamik bewegter Körper
