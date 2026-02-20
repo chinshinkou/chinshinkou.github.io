@@ -5,7 +5,7 @@ permalink: /
 nav: true
 nav_order: 1
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-subtitle: Assistant Professor @ <a href="https://www.fit.ac.jp/" target="_blank" rel="noopener noreferrer">Fukuoka Institute of Technology</a>
+subtitle: Assistant Professor @ Fukuoka Institute of Technology
 
 profile:
   align: right
@@ -49,7 +49,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 <div class="about-intro" markdown="1">
 
-I received my Ph.D. degree of Engineering from [Kyushu University](https://www.kyushu-u.ac.jp/ja/), Japan, in 2024. From 2024 to 2026, I was a Postdoctoral Researcher at [Chubu University](https://www.chubu.ac.jp/), working with Prof. Fujiyoshi (Chubu University) and Dr. Ushiku (OMRON SINIC X) on a [JST Moonshot R&D project](https://www.jst.go.jp/moonshot/program/goal3/36_ushiku.html).
+I received my Ph.D. degree of Engineering from [Kyushu University](https://www.kyushu-u.ac.jp/ja/), Japan, in 2024. From 2024 to 2026, I was a Postdoctoral Researcher at [Chubu University](https://www.chubu.ac.jp/), working with Prof. Fujiyoshi (Chubu University) and Dr. Ushiku (OMRON SINIC X) on a [JST Moonshot R&D project](https://www.jst.go.jp/moonshot/program/goal3/36_ushiku.html). Since 2026, I have been an assistant professor at [Fukuoka Institute of Technology](https://www.fit.ac.jp/).
 
 My research interests lie in deep learning, natural language processing, and behavior change support systems.
 
