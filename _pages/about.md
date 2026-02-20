@@ -30,6 +30,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 
 _styles: |
+  .post-header .desc {
+    font-size: 1.05rem;
+  }
+
   .about-intro p {
     font-size: 1.05rem;
     line-height: 1.65;
