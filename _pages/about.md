@@ -13,8 +13,8 @@ profile:
   image: myphoto.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>3-30-1, Washirohigashi</p>
-    <p>Higashi-ku, Fukuoka City</p>
+    <p>3-30-1, Washirohigashi,</p>
+    <p>Higashi-ku, Fukuoka City,</p>
     <p>Fukuoka Prefecture, 811-0295</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
