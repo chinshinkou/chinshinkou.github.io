@@ -74,11 +74,12 @@ layout: default
     <!-- Social -->
     {% if page.social %}
       <div class="social">
+        {% assign researchmap_url = page.researchmap_url | default: site.researchmap_url %}
         <div class="contact-icons">
           {% social_links %}
-          {% if site.data.socials.researchmap_url and site.data.socials.researchmap_url != blank %}
+          {% if researchmap_url and researchmap_url != blank %}
             <a
-              href="{{ site.data.socials.researchmap_url }}"
+              href="{{ researchmap_url }}"
               title="Researchmap"
               aria-label="Researchmap"
               target="_blank"

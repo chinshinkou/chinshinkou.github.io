@@ -6,6 +6,7 @@ nav: true
 nav_order: 1
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 subtitle: Assistant Professor @ Fukuoka Institute of Technology
+researchmap_url: https://researchmap.jp/chinshinkou
 
 profile:
   align: right
