@@ -33,6 +33,7 @@ _styles: |
   .about-intro p {
     font-size: 1.2rem;
     line-height: 1.8;
+    text-align: justify;
   }
 ---
 
