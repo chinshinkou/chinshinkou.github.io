@@ -31,8 +31,8 @@ latest_posts:
 
 _styles: |
   .about-intro p {
-    font-size: 1.12rem;
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.65;
     text-align: justify;
   }
 ---
