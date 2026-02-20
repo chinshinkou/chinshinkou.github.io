@@ -31,7 +31,7 @@ latest_posts:
 
 _styles: |
   .profile .more-info p {
-    font-size: 0.8rem;
+    font-size: 0.95 rem;
     line-height: 1.4;
     margin-bottom: 0.2rem;
   }
