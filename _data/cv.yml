@@ -101,6 +101,10 @@ cv:
         # url: https://www.fukoku.ac.jp/
         # summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
 
+      - title: Young Author Award
+        date: 2020-1-10
+        awarder: 2020 25th International Symposium on Artificial Life and Robotics (AROB2020)
+
     # Publications:
     #   - title: Zur Elektrodynamik bewegter Körper
     #     authors:
