@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[Paper accepted by Information.]({{ '/publications/journals-international/#Chenhao2026AMF' | relative_url }})
+<a href="{{ '/publications/journals-international/#Chenhao2026AMF' | relative_url }}">Paper accepted by <u>Information</u>.</a>
