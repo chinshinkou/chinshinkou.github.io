@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-27'
+  last_updated: '2026-03-04'
 papers:
   Cso3XCQAAAAJ:2osOgNQ5qMEC:
     citations: 3
@@ -9,6 +9,10 @@ papers:
     citations: 0
     title: Method of Sea Wave Matching Based on Siamese Network
     year: '2019'
+  Cso3XCQAAAAJ:LkGwnXOMwfcC:
+    citations: 0
+    title: A Modular Framework for Automated Hypothesis Validation and Refinement in Scientific Research
+    year: '2026'
   Cso3XCQAAAAJ:Tyk-4Ss8FVUC:
     citations: 0
     title: 'ToonMeet: A Real-time Portrait Toonification Framework with Frame Interpolation Fine-tuned for Online Meeting'
@@ -29,6 +33,10 @@ papers:
     citations: 0
     title: An End-To-End Hybrid Overhead Facial Orientation Estimation System for Offline Group Discussions
     year: '2023'
+  Cso3XCQAAAAJ:_FxGoFyzp5QC:
+    citations: 0
+    title: "VLM\u3092\u7528\u3044\u305F\u79D1\u5B66\u30D9\u30AF\u30BF\u56F3XML\u306E\u81EA\u52D5\u751F\u6210"
+    year: '2026'
   Cso3XCQAAAAJ:d1gkVwhDpl0C:
     citations: 3
     title: Research on stereo matching methods for long distance sea surface image
@@ -45,10 +53,6 @@ papers:
     citations: 19
     title: Quantitative Evaluation System for Online Meetings Based on Multimodal Microbehavior Analysis.
     year: '2022'
-  Cso3XCQAAAAJ:ufrVoPGSRksC:
-    citations: 0
-    title: A Modular Framework for Automated Hypothesis Validation and Refinement in Scientific Research
-    year: '2026'
   Cso3XCQAAAAJ:zYLM7Y9cAGgC:
     citations: 0
     title: Generating Virtual Head-Mounted Gyroscope Signals From Video Data
