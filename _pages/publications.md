@@ -14,7 +14,6 @@ children:
     permalink: /publications/journals-international/
   - title: Journals (Japanese)
     permalink: /publications/journals-japanese/
-    # disabled: true
   - title: Others
     permalink: /publications/others/
 ---
