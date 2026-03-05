@@ -86,6 +86,13 @@
                     {% for child in p.children %}
                       {% if child.title == 'divider' %}
                         <div class="dropdown-divider"></div>
+                      {% elsif child.disabled %}
+                        <span
+                          class="dropdown-item disabled"
+                          style="color: #aaa; pointer-events: none; cursor: default;"
+                        >
+                          {{- child.title -}}
+                        </span>
                       {% else %}
                         <a
                           class="dropdown-item {% if page.title == child.title %}active{% endif %}"
