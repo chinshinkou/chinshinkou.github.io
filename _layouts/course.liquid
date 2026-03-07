@@ -1,75 +1,89 @@
 ---
 layout: page
 ---
+{% if page.password_hash %}
+  <script>
+    window.__passwordHash = "{{ page.password_hash }}";
+  </script>
+{% endif %}
 <div class="course">
-  {% if page.instructor or page.term or page.location or page.time %}
-    <div class="course-info">
-      {% if page.instructor %}
-        <p><strong>Instructor:</strong> {{ page.instructor }}</p>
-      {% endif %}
+  <div id="course-content" {% if page.password_hash %}style="display: none;"{% endif %}>
 
-      {% if page.term %}
-        <p><strong>Term:</strong> {{ page.term }}</p>
+  {% if page.grade_year or page.semester or page.subject_type or page.credits %}
+    <div class="course-meta">
+      {% if page.grade_year %}
+        <div class="course-meta-item">
+          <span class="course-meta-label">開講学年</span>
+          <span class="course-meta-value">{{ page.grade_year }}</span>
+        </div>
       {% endif %}
+      {% if page.semester %}
+        <div class="course-meta-item">
+          <span class="course-meta-label">学期</span>
+          <span class="course-meta-value">{{ page.semester }}</span>
+        </div>
+      {% endif %}
+      {% if page.subject_type %}
+        <div class="course-meta-item">
+          <span class="course-meta-label">科目区分</span>
+          <span class="course-meta-value">{{ page.subject_type }}</span>
+        </div>
+      {% endif %}
+      {% if page.credits %}
+        <div class="course-meta-item">
+          <span class="course-meta-label">単位数</span>
+          <span class="course-meta-value">{{ page.credits }}</span>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
 
-      {% if page.location %}
-        <p><strong>Location:</strong> {{ page.location }}</p>
-      {% endif %}
-
-      {% if page.time %}
-        <p><strong>Time:</strong> {{ page.time }}</p>
-      {% endif %}
+  {% if page.references %}
+    <div class="course-references">
+      <h3>参考書</h3>
+      <ul>
+        {% for book in page.references %}
+          <li>
+            {% if book.url %}
+              <a href="{{ book.url }}" target="_blank">{{ book.name }}</a>
+            {% else %}
+              {{ book.name }}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   {% endif %}
 
   {{ content }}
 
   {% if page.schedule %}
-    <h2>Schedule</h2>
-    <table class="table table-sm table-responsive">
-      <thead>
-        <tr>
-          <th>Week</th>
-          <th>Date</th>
-          <th>Topic</th>
-          <th>Materials</th>
-        </tr>
-      </thead>
-      <tbody>
+    <div class="course-schedule">
+      <h2>授業計画</h2>
+      <ol class="schedule-list">
         {% for entry in page.schedule %}
-          <tr>
-            <td>{{ entry.week }}</td>
-            <td>{{ entry.date }}</td>
-            <td>
-              {% if entry.topic %}
-                <strong>{{ entry.topic }}</strong>
-              {% endif %}
-              {% if entry.description %}
+          <li class="schedule-item">
+            <span class="week-badge">第{{ entry.lecture_num }}回</span>
+            <div class="schedule-item-body">
+              <div class="schedule-item-header">
+                {% if entry.url %}
+                  <a href="{{ entry.url | relative_url }}" class="schedule-topic-link">{{ entry.topic }}</a>
+                {% else %}
+                  <span class="schedule-topic">{{ entry.topic }}</span>
+                {% endif %}
+                {% if entry.date %}
+                  <span class="schedule-date">{{ entry.date }}</span>
+                {% endif %}
+              </div>
+              {% if entry.description and entry.description != "..." %}
                 <div class="schedule-description">{{ entry.description | markdownify }}</div>
               {% endif %}
-            </td>
-            <td>
-              {% if entry.materials %}
-                <ul class="schedule-materials">
-                  {% for material in entry.materials %}
-                    <li>
-                      {% if material.url %}
-                        {% if material.url contains '://' %}
-                          <a href="{{ material.url }}" target="_blank">{{ material.name }}</a>
-                        {% else %}
-                          <a href="{{ material.url | relative_url }}" target="_blank">{{ material.name }}</a>
-                        {% endif %}
-                      {% else %}
-                        {{ material.name }}
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </td>
-          </tr>
+            </div>
+          </li>
         {% endfor %}
-      </tbody>
-    </table>
+      </ol>
+    </div>
   {% endif %}
+
+  </div>
 </div>

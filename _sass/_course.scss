@@ -1,0 +1,181 @@
+// ---------------------------------------------------------------------------
+// Course page styles
+// ---------------------------------------------------------------------------
+
+.course {
+  margin-top: 1.5rem;
+
+  // -- Metadata badges (horizontal grid) --
+  .course-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    .course-meta-item {
+      display: flex;
+      flex-direction: column;
+      background: var(--global-card-bg-color, var(--global-bg-color));
+      border: 1px solid var(--global-divider-color);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      min-width: 120px;
+      flex: 1 1 0;
+    }
+
+    .course-meta-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.15rem;
+    }
+
+    .course-meta-value {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--global-text-color);
+    }
+  }
+
+  // -- References card --
+  .course-references {
+    background: var(--global-card-bg-color, var(--global-bg-color));
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 2rem;
+
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--global-theme-color);
+      margin-top: 0;
+      margin-bottom: 0.6rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+
+      li {
+        font-size: 0.9rem;
+        line-height: 1.55;
+        color: var(--global-text-color);
+        margin-bottom: 0.3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // -- Schedule / 授業計画 --
+  .course-schedule {
+    margin-top: 1.5rem;
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .schedule-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .schedule-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--global-divider-color);
+
+      &:first-child {
+        border-top: 1px solid var(--global-divider-color);
+      }
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.015);
+      }
+    }
+
+    .week-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 0.25rem 0.6rem;
+      border-radius: 1rem;
+      background: var(--global-theme-color);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.75rem;
+      white-space: nowrap;
+    }
+
+    .schedule-item-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .schedule-item-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .schedule-topic-link {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--global-theme-color);
+      text-decoration: none;
+      transition: color 0.15s ease;
+
+      &:hover {
+        color: var(--global-hover-color);
+        text-decoration: underline;
+      }
+    }
+
+    .schedule-topic {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--global-text-color);
+    }
+
+    .schedule-date {
+      white-space: nowrap;
+      color: var(--global-text-color-light);
+      font-size: 0.82rem;
+    }
+
+    .schedule-description {
+      margin-top: 0.3rem;
+      font-size: 0.88rem;
+      color: var(--global-text-color-light);
+      line-height: 1.5;
+
+      p {
+        margin: 0;
+      }
+
+      ul {
+        margin: 0.2rem 0 0;
+        padding-left: 1.2rem;
+      }
+    }
+  }
+}
+
+// Dark mode adjustments
+html[data-theme="dark"] {
+  .course .course-schedule .schedule-item:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}

@@ -182,6 +182,9 @@
 <!-- Load Common JS -->
 <script src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
 <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
+{% if page.password_hash %}
+  <script defer src="{{ '/assets/js/password-protect.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
 <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
 
 <!-- Jupyter Open External Links New Tab -->

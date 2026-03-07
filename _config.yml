@@ -153,6 +153,8 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
+  lectures:
+    output: true
   books:
     output: true
   news:
