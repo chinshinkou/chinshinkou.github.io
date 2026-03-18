@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-04'
+  last_updated: '2026-03-18'
 papers:
   Cso3XCQAAAAJ:2osOgNQ5qMEC:
     citations: 3
@@ -9,10 +9,6 @@ papers:
     citations: 0
     title: Method of Sea Wave Matching Based on Siamese Network
     year: '2019'
-  Cso3XCQAAAAJ:LkGwnXOMwfcC:
-    citations: 0
-    title: A Modular Framework for Automated Hypothesis Validation and Refinement in Scientific Research
-    year: '2026'
   Cso3XCQAAAAJ:Tyk-4Ss8FVUC:
     citations: 0
     title: 'ToonMeet: A Real-time Portrait Toonification Framework with Frame Interpolation Fine-tuned for Online Meeting'
@@ -49,6 +45,10 @@ papers:
     citations: 0
     title: Long Distance Sea Surface Images Fast Sparse Matching by Integrated Feature Vector
     year: '2019'
+  Cso3XCQAAAAJ:roLk4NBRz8UC:
+    citations: 0
+    title: A Modular Framework for Automated Hypothesis Validation and Refinement in Scientific Research
+    year: '2026'
   Cso3XCQAAAAJ:u-x6o8ySG0sC:
     citations: 19
     title: Quantitative Evaluation System for Online Meetings Based on Multimodal Microbehavior Analysis.
