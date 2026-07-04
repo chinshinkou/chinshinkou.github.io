@@ -446,6 +446,10 @@ nav[data-toggle="toc"] {
 
 #toc-sidebar {
   z-index: 1;
+
+  .nav-link {
+    font-size: 1.4rem;
+  }
 }
 
 #email-copied-toast {
@@ -464,7 +468,9 @@ nav[data-toggle="toc"] {
   opacity: 0;
   pointer-events: none;
   z-index: 2000;
-  transition: opacity 0.16s ease, transform 0.16s ease;
+  transition:
+    opacity 0.16s ease,
+    transform 0.16s ease;
 }
 
 #email-copied-toast.show {

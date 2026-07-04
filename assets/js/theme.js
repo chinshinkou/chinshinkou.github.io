@@ -291,7 +291,6 @@ let initTheme = () => {
       toggleThemeSetting();
     });
   });
-
 };
 
 // Get the appropriate background color for Google Calendar based on current theme

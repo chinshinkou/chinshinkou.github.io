@@ -3,87 +3,90 @@ layout: page
 ---
 {% if page.password_hash %}
   <script>
-    window.__passwordHash = "{{ page.password_hash }}";
+    window.__passwordHash = '{{ page.password_hash }}';
   </script>
 {% endif %}
 <div class="course">
-  <div id="course-content" {% if page.password_hash %}style="display: none;"{% endif %}>
+  <div
+    id="course-content"
+    {% if page.password_hash %}
+      style="display: none;"
+    {% endif %}
+  >
+    {% if page.grade_year or page.semester or page.subject_type or page.credits %}
+      <div class="course-meta">
+        {% if page.grade_year %}
+          <div class="course-meta-item">
+            <span class="course-meta-label">開講学年</span>
+            <span class="course-meta-value">{{ page.grade_year }}</span>
+          </div>
+        {% endif %}
+        {% if page.semester %}
+          <div class="course-meta-item">
+            <span class="course-meta-label">学期</span>
+            <span class="course-meta-value">{{ page.semester }}</span>
+          </div>
+        {% endif %}
+        {% if page.subject_type %}
+          <div class="course-meta-item">
+            <span class="course-meta-label">科目区分</span>
+            <span class="course-meta-value">{{ page.subject_type }}</span>
+          </div>
+        {% endif %}
+        {% if page.credits %}
+          <div class="course-meta-item">
+            <span class="course-meta-label">単位数</span>
+            <span class="course-meta-value">{{ page.credits }}</span>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
 
-  {% if page.grade_year or page.semester or page.subject_type or page.credits %}
-    <div class="course-meta">
-      {% if page.grade_year %}
-        <div class="course-meta-item">
-          <span class="course-meta-label">開講学年</span>
-          <span class="course-meta-value">{{ page.grade_year }}</span>
-        </div>
-      {% endif %}
-      {% if page.semester %}
-        <div class="course-meta-item">
-          <span class="course-meta-label">学期</span>
-          <span class="course-meta-value">{{ page.semester }}</span>
-        </div>
-      {% endif %}
-      {% if page.subject_type %}
-        <div class="course-meta-item">
-          <span class="course-meta-label">科目区分</span>
-          <span class="course-meta-value">{{ page.subject_type }}</span>
-        </div>
-      {% endif %}
-      {% if page.credits %}
-        <div class="course-meta-item">
-          <span class="course-meta-label">単位数</span>
-          <span class="course-meta-value">{{ page.credits }}</span>
-        </div>
-      {% endif %}
-    </div>
-  {% endif %}
+    {% if page.references %}
+      <div class="course-references">
+        <h3>参考書</h3>
+        <ul>
+          {% for book in page.references %}
+            <li>
+              {% if book.url %}
+                <a href="{{ book.url }}" target="_blank">{{ book.name }}</a>
+              {% else %}
+                {{ book.name }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
-  {% if page.references %}
-    <div class="course-references">
-      <h3>参考書</h3>
-      <ul>
-        {% for book in page.references %}
-          <li>
-            {% if book.url %}
-              <a href="{{ book.url }}" target="_blank">{{ book.name }}</a>
-            {% else %}
-              {{ book.name }}
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
+    {{ content }}
 
-  {{ content }}
-
-  {% if page.schedule %}
-    <div class="course-schedule">
-      <h2>授業計画</h2>
-      <ol class="schedule-list">
-        {% for entry in page.schedule %}
-          <li class="schedule-item">
-            <span class="week-badge">第{{ entry.lecture_num }}回</span>
-            <div class="schedule-item-body">
-              <div class="schedule-item-header">
-                {% if entry.url %}
-                  <a href="{{ entry.url | relative_url }}" class="schedule-topic-link">{{ entry.topic }}</a>
-                {% else %}
-                  <span class="schedule-topic">{{ entry.topic }}</span>
-                {% endif %}
-                {% if entry.date %}
-                  <span class="schedule-date">{{ entry.date }}</span>
+    {% if page.schedule %}
+      <div class="course-schedule">
+        <h2>授業計画</h2>
+        <ol class="schedule-list">
+          {% for entry in page.schedule %}
+            <li class="schedule-item">
+              <span class="week-badge">第{{ entry.lecture_num }}回</span>
+              <div class="schedule-item-body">
+                <div class="schedule-item-header">
+                  {% if entry.url %}
+                    <a href="{{ entry.url | relative_url }}" class="schedule-topic-link">{{ entry.topic }}</a>
+                  {% else %}
+                    <span class="schedule-topic">{{ entry.topic }}</span>
+                  {% endif %}
+                  {% if entry.date %}
+                    <span class="schedule-date">{{ entry.date }}</span>
+                  {% endif %}
+                </div>
+                {% if entry.description and entry.description != '...' %}
+                  <div class="schedule-description">{{ entry.description | markdownify }}</div>
                 {% endif %}
               </div>
-              {% if entry.description and entry.description != "..." %}
-                <div class="schedule-description">{{ entry.description | markdownify }}</div>
-              {% endif %}
-            </div>
-          </li>
-        {% endfor %}
-      </ol>
-    </div>
-  {% endif %}
-
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+    {% endif %}
   </div>
 </div>

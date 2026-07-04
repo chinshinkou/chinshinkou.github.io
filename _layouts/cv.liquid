@@ -16,7 +16,8 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
-      {{ page.title }}
+      {% assign page_title_ja = page.title_ja | default: page.title -%}
+      {%- include lang.liquid en=page.title ja=page_title_ja %}
       {% if page.cv_pdf %}
         <a
           {% if page.cv_pdf contains '://' %}
@@ -63,38 +64,55 @@ layout: default
         <!-- Header/Contact Information -->
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
+            <h3 class="card-title font-weight-medium">{% include lang.liquid en="Contact" ja="連絡先" %}</h3>
             <table class="table table-cv table-sm table-borderless">
               {% if cv.name %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% include lang.liquid en="Name" ja="氏名" %}</b>
+                  </td>
+                  <td class="p-1 pl-2 font-weight-light">
+                    {% assign cv_name_ja = cv.name_ja | default: cv.name -%}
+                    {%- include lang.liquid en=cv.name ja=cv_name_ja %}
+                  </td>
                 </tr>
               {% endif %}
               {% if cv.label %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.label }}</td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% include lang.liquid en="Professional Title" ja="職位" %}</b>
+                  </td>
+                  <td class="p-1 pl-2 font-weight-light">
+                    {% assign cv_label_ja = cv.label_ja | default: cv.label -%}
+                    {%- include lang.liquid en=cv.label ja=cv_label_ja %}
+                  </td>
                 </tr>
               {% endif %}
               {% if cv.email %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% include lang.liquid en="Email" ja="メール" %}</b>
+                  </td>
                   <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
                 </tr>
               {% endif %}
               {% if cv.phone %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% include lang.liquid en="Phone" ja="電話" %}</b>
+                  </td>
                   <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
                 </tr>
               {% endif %}
               {% if cv.location or cv.address %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% include lang.liquid en="Location" ja="所在地" %}</b>
+                  </td>
                   <td class="p-1 pl-2 font-weight-light">
                     {% if cv.location %}
-                      {{ cv.location }}
+                      {% assign cv_location_ja = cv.location_ja | default: cv.location -%}
+                      {%- include lang.liquid en=cv.location ja=cv_location_ja %}
                     {% else %}
                       {% if cv.address.street %}{{ cv.address.street }}, {% endif %}
                       {% if cv.address.city %}{{ cv.address.city }}, {% endif %}
@@ -107,7 +125,9 @@ layout: default
               {% endif %}
               {% if cv.website %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% include lang.liquid en="Website" ja="ウェブサイト" %}</b>
+                  </td>
                   <td class="p-1 pl-2 font-weight-light">
                     <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
                   </td>
@@ -120,7 +140,7 @@ layout: default
         <!-- Summary -->
         {% if cv.summary %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+            <h3 class="card-title font-weight-medium">{% include lang.liquid en="Professional Summary" ja="概要" %}</h3>
             <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
@@ -134,7 +154,7 @@ layout: default
         {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
+            <h3 class="card-title font-weight-medium">{% include cv/section_title.liquid title="Experience" %}</h3>
             <div>
               {% assign entries = combined_experience %}
               {% include cv/experience.liquid %}
@@ -154,7 +174,7 @@ layout: default
 
           <a class="anchor" id="{{ section_title | slugify }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
+            <h3 class="card-title font-weight-medium">{% include cv/section_title.liquid title=section_title %}</h3>
             <div>
               {% if section_title == 'Education' %}
                 {% assign entries = section_entries %}
@@ -207,7 +227,7 @@ layout: default
         <!-- Contact Information -->
         {% if site.data.resume.basics %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
+            <h3 class="card-title font-weight-medium">{% include lang.liquid en="Contact" ja="連絡先" %}</h3>
             {% assign basics = site.data.resume.basics %}
             <table class="table table-cv table-sm table-borderless">
               {% if basics.name %}
@@ -224,13 +244,17 @@ layout: default
               {% endif %}
               {% if basics.email %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% include lang.liquid en="Email" ja="メール" %}</b>
+                  </td>
                   <td class="p-1 pl-2 font-weight-light">{{ basics.email }}</td>
                 </tr>
               {% endif %}
               {% if basics.phone %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% include lang.liquid en="Phone" ja="電話" %}</b>
+                  </td>
                   <td class="p-1 pl-2 font-weight-light">{{ basics.phone }}</td>
                 </tr>
               {% endif %}
@@ -242,13 +266,19 @@ layout: default
                     {% if basics.location.city %}{{ basics.location.city }}, {% endif %}
                     {% if basics.location.region %}{{ basics.location.region }} {% endif %}
                     {% if basics.location.postalCode %}{{ basics.location.postalCode }}{% endif %}
-                    {% if basics.location.country %}, {{ basics.location.country }}{% elsif basics.location.countryCode %}, {{ basics.location.countryCode }}{% endif %}
+                    {% if basics.location.country -%}
+                      , {{ basics.location.country -}}
+                    {%- elsif basics.location.countryCode -%}
+                      , {{ basics.location.countryCode -}}
+                    {%- endif %}
                   </td>
                 </tr>
               {% endif %}
               {% if basics.url %}
                 <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
+                  <td class="p-1 pr-2 font-weight-bold">
+                    <b>{% include lang.liquid en="Website" ja="ウェブサイト" %}</b>
+                  </td>
                   <td class="p-1 pl-2 font-weight-light">
                     <a href="{{ basics.url }}" target="_blank">{{ basics.url }}</a>
                   </td>
@@ -261,7 +291,7 @@ layout: default
         <!-- Summary -->
         {% if site.data.resume.basics.summary %}
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+            <h3 class="card-title font-weight-medium">{% include lang.liquid en="Professional Summary" ja="概要" %}</h3>
             <p>{{ site.data.resume.basics.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
@@ -274,7 +304,7 @@ layout: default
         {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
+            <h3 class="card-title font-weight-medium">{% include cv/section_title.liquid title="Experience" %}</h3>
             <div>
               {% assign entries = combined_experience %}
               {% include cv/experience.liquid %}

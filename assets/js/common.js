@@ -129,6 +129,19 @@ $(document).ready(function () {
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
     Toc.init($myNav);
+    // Make TOC labels language-aware: bootstrap-toc copies a heading's full text
+    // (both languages, e.g. "Contact連絡先"). Replace each TOC label with a clone
+    // of the heading's .lang-en/.lang-ja spans so the active-language CSS applies.
+    $("#toc-sidebar a.nav-link").each(function () {
+      var id = this.hash ? this.hash.slice(1) : "";
+      if (!id) return;
+      var target = document.getElementById(decodeURIComponent(id));
+      if (!target) return;
+      var $spans = $(target).find(".lang-en, .lang-ja");
+      if ($spans.length) {
+        $(this).empty().append($spans.clone());
+      }
+    });
     $("body").scrollspy({
       target: navSelector,
       offset: 100,

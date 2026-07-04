@@ -1,0 +1,39 @@
+{%- comment -%}
+  Renders a CV section heading bilingually. The English key (include.title) is
+  also used for slug anchors and include routing in cv.liquid, so it must stay
+  English; this maps it to a Japanese label for display only.
+{%- endcomment -%}
+{%- assign _t = include.title -%}
+{%- case _t -%}
+  {%- when 'Education' -%}
+    {%- assign _ja = '学歴' -%}
+  {%- when 'Experience' -%}
+    {%- assign _ja = '職歴' -%}
+  {%- when 'Volunteer' -%}
+    {%- assign _ja = 'ボランティア' -%}
+  {%- when 'Awards' -%}
+    {%- assign _ja = '受賞' -%}
+  {%- when 'Honors and Awards' -%}
+    {%- assign _ja = '受賞歴' -%}
+  {%- when 'Publications' -%}
+    {%- assign _ja = '業績' -%}
+  {%- when 'Skills' -%}
+    {%- assign _ja = 'スキル' -%}
+  {%- when 'Languages' -%}
+    {%- assign _ja = '語学' -%}
+  {%- when 'Interests' -%}
+    {%- assign _ja = '興味・関心' -%}
+  {%- when 'Academic Interests' -%}
+    {%- assign _ja = '研究関心' -%}
+  {%- when 'Certificates' -%}
+    {%- assign _ja = '資格' -%}
+  {%- when 'Projects' -%}
+    {%- assign _ja = 'プロジェクト' -%}
+  {%- when 'Open Source Projects' -%}
+    {%- assign _ja = 'オープンソースプロジェクト' -%}
+  {%- when 'References' -%}
+    {%- assign _ja = '推薦者' -%}
+  {%- else -%}
+    {%- assign _ja = _t -%}
+{%- endcase -%}
+{%- include lang.liquid en=_t ja=_ja -%}

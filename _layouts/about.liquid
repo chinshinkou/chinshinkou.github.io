@@ -15,10 +15,14 @@ layout: default
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
-        {{ site.title }}
+        {% assign site_title_ja = page.name_ja | default: site.title -%}
+        {%- include lang.liquid en=site.title ja=site_title_ja %}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc">
+      {% assign subtitle_ja = page.subtitle_ja | default: page.subtitle -%}
+      {%- include lang.liquid en=page.subtitle ja=subtitle_ja %}
+    </p>
   </header>
 
   <article>
@@ -50,7 +54,7 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -58,7 +62,7 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">{% include lang.liquid en="latest posts" ja="最新の投稿" %}</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -66,7 +70,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">{% include lang.liquid en="selected publications" ja="主要業績" %}</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

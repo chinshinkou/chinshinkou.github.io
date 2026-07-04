@@ -1,8 +1,11 @@
 cv:
   name: Chenhao Chen
+  name_ja: 陳 辰昊
   label: Assistant Professor
+  label_ja: 助教
   email: c-chen@fit.ac.jp
   location: 3-30-1, Wajirohigashi, Higashi-ku, Fukuoka City, Fukuoka Prefecture, 811-0295, Japan
+  location_ja: 〒811-0295 福岡県福岡市東区和白東3-30-1
   image: ""
   # summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
 
@@ -24,28 +27,40 @@ cv:
   sections:
     Education:
       - institution: Kyushu University
+        institution_ja: 九州大学
         location: Japan
+        location_ja: 日本
         studyType: Ph.D. in Engineering
+        studyType_ja: 工学博士
         start_date: 2021
         end_date: 2024
 
       - institution: Fukuoka Institute of Technology
+        institution_ja: 福岡工業大学
         location: Japan
+        location_ja: 日本
         studyType: M.E. in Engineering (Japan)
+        studyType_ja: 工学修士（日本）
         start_date: 2018
         end_date: 2020
 
       - institution: Nanjing University of Science and Technology
+        institution_ja: 南京理工大学
         location: China
+        location_ja: 中国
         studyType: M.E. in Engineering (China)
+        studyType_ja: 工学修士（中国）
         start_date: 2017
         end_date: 2020
 
       - institution: Nanjing University of Science and Technology
+        institution_ja: 南京理工大学
         location: China
+        location_ja: 中国
         # url: https://www.uzh.ch/
         # area: Physics
         studyType: B.E. in Engineering
+        studyType_ja: 工学学士
         start_date: 2013
         end_date: 2017
         # score: ""
@@ -56,20 +71,29 @@ cv:
 
     Experience:
       - company: Department of Electronics and Information Engineering, Faculty of Engineering, Fukuoka Institute of Technology
+        company_ja: 福岡工業大学 工学部 電子情報工学科
         position: Assistant Professor
+        position_ja: 助教
         location: Japan
+        location_ja: 日本
         start_date: 2024
         end_date: Present
 
       - company: Machine Perception and Robotics Group (MPRG), Chubu University
+        company_ja: 中部大学 機械知覚&ロボティクスグループ（MPRG）
         position: Postdoctoral Researcher
+        position_ja: 博士研究員
         location: Japan
+        location_ja: 日本
         start_date: 2024
         end_date: 2026
 
       - company: German Research Center for Artificial Intelligence (DFKI)
+        company_ja: ドイツ人工知能研究センター（DFKI）
         position: Visiting Researcher
+        position_ja: 客員研究員
         location: Germany
+        location_ja: ドイツ
         start_date: 2022
         end_date: 2023
 
@@ -86,13 +110,14 @@ cv:
 
     Awards:
       - title: Best Presenter Award
+        title_ja: Best Presenter Award
         date: 2025-10-24
         awarder: 2025 5th International Conference on Communications, Networking and Machine Learning (CCNML2025)
 
       - title: 電気通信普及財団海外渡航旅費援助
         date: 2023-11-6
         awarder: 電気通信普及財団
-      
+
       - title: 九州大学先導的人材育成フェローシップ事業（情報・AI分野）
         # authors:
         #   - "九州大学"
@@ -102,6 +127,7 @@ cv:
         # summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
 
       - title: Young Author Award
+        title_ja: Young Author Award
         date: 2020-1-10
         awarder: 2020 25th International Symposium on Artificial Life and Robotics (AROB2020)
 

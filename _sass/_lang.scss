@@ -1,0 +1,35 @@
+/*******************************************************************************
+ * Language toggle (English / Japanese).
+ * The active language is selected via the data-lang attribute on <html>,
+ * set synchronously in the head by lang.js to avoid a flash of wrong language.
+ * Only the matching language is shown; the hidden one keeps its natural
+ * display value so both inline (span) and block (div) content work.
+ ******************************************************************************/
+
+html[data-lang="en"] .lang-ja {
+  display: none;
+}
+
+html[data-lang="ja"] .lang-en {
+  display: none;
+}
+
+/* Language toggle button — mirrors #light-toggle, but shows short text. */
+#language-toggle {
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  color: var(--global-text-color);
+  min-width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    color: var(--global-hover-color);
+  }
+}

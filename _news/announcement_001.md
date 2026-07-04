@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Renew my homepage.
+<span class="lang-en">Renew my homepage</span><span class="lang-ja">ホームページを更新しました</span>

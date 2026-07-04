@@ -30,18 +30,24 @@
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
+                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                    {%- assign date_ja = date | replace: 'Present', '現在' -%}
+                    {%- include lang.liquid en=date ja=date_ja -%}
+                  </span>
                 </td>
               </tr>
               {% capture location %}
                 {% if entry.location %}{{ entry.location }}{% endif %}
+              {% endcapture %}
+              {% capture location_ja %}
+                {% if entry.location_ja %}{{ entry.location_ja }}{% elsif entry.location %}{{ entry.location }}{% endif %}
               {% endcapture %}
               {% if location != '' %}
                 <tr>
                   <td>
                     <p class="location">
                       <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ location }}
+                      {% include lang.liquid en=location ja=location_ja %}
                     </p>
                   </td>
                 </tr>
@@ -53,20 +59,26 @@
           {% capture position_title %}
             {% if entry.position %}{{ entry.position }}{% endif %}
           {% endcapture %}
+          {% capture position_title_ja %}
+            {% if entry.position_ja %}{{ entry.position_ja }}{% else %}{{ position_title }}{% endif %}
+          {% endcapture %}
 
           {% if entry.url %}
             <h6 class="title font-weight-bold ml-1 ml-md-4">
-              <a href="{{ entry.url }}">{{ position_title }}</a>
+              <a href="{{ entry.url }}">{% include lang.liquid en=position_title ja=position_title_ja %}</a>
             </h6>
           {% elsif position_title != '' %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ position_title }}</h6>
+            <h6 class="title font-weight-bold ml-1 ml-md-4">{% include lang.liquid en=position_title ja=position_title_ja %}</h6>
           {% endif %}
 
           {% capture company_name %}
             {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
           {% endcapture %}
+          {% capture company_name_ja %}
+            {% if entry.name_ja %}{{ entry.name_ja }}{% elsif entry.company_ja %}{{ entry.company_ja }}{% elsif entry.organization_ja %}{{ entry.organization_ja }}{% else %}{{ company_name }}{% endif %}
+          {% endcapture %}
           {% if company_name != '' %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ company_name }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{% include lang.liquid en=company_name ja=company_name_ja %}</h6>
           {% endif %}
 
           {% if entry.summary %}
