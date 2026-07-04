@@ -58,20 +58,6 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/publications/others/";
               },
-            },{id: "dropdown-コンピュータシステムii",
-              title: "コンピュータシステムII",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/lectures/computer_system_2/";
-              },
-            },{id: "dropdown-人工知能基礎と演習",
-              title: "人工知能基礎と演習",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/";
-              },
             },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -440,147 +426,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
+            },},{id: "news-renew-my-homepageホームページを更新しました",
+          title: 'Renew my homepageホームページを更新しました',
           description: "",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第1回) AIの概要と歴史、Pythonのインストール",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_01/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第2回) Pythonの基本操作、グラフの描画（2次元と3次元のグラフを描く）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_02/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第3回) 機械学習に必要な数学の基本（ベクトル、微分）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_03/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第4回) 機械学習に必要な数学の基本（偏微分、行列、関数）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_04/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第5回) 機械学習の原理と手法",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_05/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第6回) 教師あり学習：回帰（平均二乗誤差、勾配降下法）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_06/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第7回) 教師あり学習：回帰（線形基底関数モデル、オーバーフィッティング）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_07/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第9回) 教師あり学習：分類（最尤推定）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_09/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第10回) 教師あり学習：分類（ロジスティック回帰モデル）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_10/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第11回) 教師なし学習：K-means法、EMアルゴリズム",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_11/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第12回) ニューラルネットワーク",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_12/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第13回) 簡単なディープランニング",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_13/";
-            },},{id: "lectures-人工知能基礎と演習",
-          title: '人工知能基礎と演習',
-          description: "(第14回) ニューラルネットワークの応用",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/artificial_intelligence_fundamentals_and_exercises/course_14/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
+          section: "News",},{id: "news-paper-accepted-by-tsd2025論文が-tsd2025-に採択されました",
+          title: 'Paper accepted by TSD2025論文が TSD2025 に採択されました',
           description: "",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第1回) コンピュータのシステムとしての基本構成",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_01/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第2回) ソフトウエアの概要",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_02/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第4回) プログラム（プログラミング言語＆言語プロセッサ）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_04/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第5回) プログラム（プログラミング）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_05/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第7回) オペレーティングシステムⅠ（OSとは、タスク管理）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_07/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第9回) オペレーティングシステムII（入出力、主記憶管理）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_09/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第10回) オペレーティングシステムIII（ファイルシステム、ユーティリティプログラム）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_10/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第11回) データベースⅠ（データベースの特徴と構成、正規化）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_11/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第12回) データベースII（SQL言語、データ操作）",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_12/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第13回) 通信ネットワーク、LAN",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_13/";
-            },},{id: "lectures-コンピュータシステムii",
-          title: 'コンピュータシステムII',
-          description: "(第14回) 情報セキュリテイ",
-          section: "Lectures",handler: () => {
-              window.location.href = "/lectures/computer_system_2/course_14/";
-            },},{id: "news-renew-my-homepage",
-          title: 'Renew my homepage.',
+          section: "News",},{id: "news-paper-accepted-by-ai2a2025論文が-ai2a2025-に採択されました",
+          title: 'Paper accepted by AI2A2025論文が AI2A2025 に採択されました',
           description: "",
-          section: "News",},{id: "news-paper-accepted-by-tsd2025",
-          title: 'Paper accepted by TSD2025.',
-          description: "",
-          section: "News",},{id: "news-paper-accepted-by-ai2a2025",
-          title: 'Paper accepted by AI2A2025.',
-          description: "",
-          section: "News",},{id: "news-paper-accepted-by-information",
-          title: 'Paper accepted by Information.',
+          section: "News",},{id: "news-paper-accepted-by-information論文が-information-誌に採択されました",
+          title: 'Paper accepted by Information論文が Information 誌に採択されました',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
